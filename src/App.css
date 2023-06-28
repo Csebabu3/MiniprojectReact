@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+.navbar{
+    background: blue;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand,.list-item{
+    color: white;
+    font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.list-item:hover{
+    color: black;
+    text-decoration: underline;
+}
+.btn{
+    background: navy !important;
+    border: none;
+    border-radius: 20px;
+}
+.brand{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.sidebar{
+    height: 130vh;
+    width: 250px;
+    background-color: #2f2f2f;
   }
-}
+  .sidebarList{
+    height: auto;
+    width: 100%;
+   padding: 0;
+  }
+  .sidebarList .row{
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .row #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+  }
+  .row #title{
+    flex: 70%;
+  }
+  .sidebarList .row:hover{
+    cursor: pointer;
+    background-color: skyblue;
+    color: black;
+    font-weight: bolder;
+  }
+  body{
+    background-color: white;
+    font-family: arial;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  }
+  h2{
+    text-align: center;
+  }
+  .Signup-form{
+    max-width: 450px;
+    border-radius: 20px;
+    margin: auto;
+    background-color: black;
+    box-sizing: border-box;
+    padding: 40px;
+    color: white;
+    margin-top: 100px;
+  }
+  input[type=text],input[type=password]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+  }
+  input[type=submit]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: blue;
+    opacity: 0.3;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  input[type=submit]:hover{
+    opacity: 1;
+  }
+  span{
+    color: red;
+    font-size: 14px;
+  }
+  .btn1{
+    background-color: yellow;
+    outline: none;
+    border: 0;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+  .btn2{
+    background-color: red;
+    outline: none;
+    border: 0;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+  .vl {
+    border-right: 6px solid black;
+    height: 400px;
+  }
+ 
+img{
+  width: 100%;
+  height: 600px;
+}
+.bare{
+  font-size: 40px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  float: right;
+  cursor: pointer;
+  transition: 5s;
+ 
 }
